@@ -2,7 +2,7 @@
 # Solution name | solutionId | url | activated
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
 
-
+#
 $featureStatus = @()
 
 $features = Get-SPFeature | Group-Object Id | ForEach-Object {$_.Group | Select-Object -First 1}
